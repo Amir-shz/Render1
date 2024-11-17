@@ -1,8 +1,12 @@
-import AboutRow from "../_components/AboutRow";
+import AboutRow from "@/app/_components/AboutRow";
 
 import about1 from "@/public/about-1.png";
 import about2 from "@/public/about-2.jpg";
 import about3 from "@/public/about-3.jpg";
+
+export const metadata = {
+  title: "درباره ما",
+};
 
 export default function page() {
   return (
