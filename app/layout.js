@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
     <html lang="fa" dir="rtl">
       <body className={`${iranSans.variable} antialiased font-iranSans`}>
         <Header />
-        <main>{children}</main>
+        <main className="px-4">{children}</main>
         <Footer />
       </body>
     </html>
