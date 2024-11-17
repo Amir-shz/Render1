@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "@/app/_styles/globals.css";
+import Header from "@/app/_components/Header";
 
 const iranSans = localFont({
   src: [
@@ -45,8 +46,11 @@ const iranSans = localFont({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${iranSans.variable} antialiased`}>{children}</body>
+    <html lang="fa" dir="rtl">
+      <body className={`${iranSans.variable} antialiased font-iranSans`}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

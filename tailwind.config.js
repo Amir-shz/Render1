@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         iranSans: ["var(--font-IranSans)"],
       },
+      colors: {
+        primary: "#E3AE7E",
+      },
     },
   },
   plugins: [],
