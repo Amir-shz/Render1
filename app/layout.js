@@ -1,42 +1,42 @@
 import localFont from "next/font/local";
-import "@/app/styles/globals.css";
+import "@/app/_styles/globals.css";
 
 const iranSans = localFont({
   src: [
     {
-      path: "./fonts/IRANSansX-Thin.woff2",
+      path: "./_fonts/IRANSansX-Thin.woff2",
       weight: "100",
     },
     {
-      path: "./fonts/IRANSansX-UltraLight.woff2",
+      path: "./_fonts/IRANSansX-UltraLight.woff2",
       weight: "200",
     },
     {
-      path: "./fonts/IRANSansX-Light.woff2",
+      path: "./_fonts/IRANSansX-Light.woff2",
       weight: "300",
     },
     {
-      path: "./fonts/IRANSansX-Regular.woff2",
+      path: "./_fonts/IRANSansX-Regular.woff2",
       weight: "400",
     },
     {
-      path: "./fonts/IRANSansX-Medium.woff2",
+      path: "./_fonts/IRANSansX-Medium.woff2",
       weight: "500",
     },
     {
-      path: "./fonts/IRANSansX-DemiBold.woff2",
+      path: "./_fonts/IRANSansX-DemiBold.woff2",
       weight: "600",
     },
     {
-      path: "./fonts/IRANSansX-Bold.woff2",
+      path: "./_fonts/IRANSansX-Bold.woff2",
       weight: "700",
     },
     {
-      path: "./fonts/IRANSansX-ExtraBold.woff2",
+      path: "./_fonts/IRANSansX-ExtraBold.woff2",
       weight: "800",
     },
     {
-      path: "./fonts/IRANSansX-Black.woff2",
+      path: "./_fonts/IRANSansX-Black.woff2",
       weight: "900",
     },
   ],

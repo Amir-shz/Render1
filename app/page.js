@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "render1",
+  description: "",
+};
+
 export default function Home() {
   return (
     <div className="font-iranSans">
