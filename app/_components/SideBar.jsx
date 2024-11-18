@@ -14,14 +14,16 @@ function SideBar({ isOpen, onClose }) {
 
   return createPortal(
     <div
-      className={` h-screen w-screen z-40 fixed top-0 right-0  ${
-        isOpen ? " backdrop-blur-sm" : " backdrop-blur-0 h-0 w-0"
+      className={` z-40 fixed top-0 right-0  ${
+        isOpen
+          ? " backdrop-blur-sm h-screen w-screen"
+          : " backdrop-blur-0 h-0 w-0"
       }  `}
     >
       <button
         onClick={onClose}
         className={` absolute top-4 left-0 transition-all duration-300 bg-slate-300 rounded-full ${
-          isOpen ? "translate-x-8" : "translate-x-0"
+          isOpen ? "translate-x-8" : "hidden"
         } `}
       >
         <HiMiniXMark size={32} />
