@@ -11,11 +11,11 @@ export const metadata = {
 export default function page() {
   return (
     <>
-      <h2 className=" text-3xl pt-16 font-bold border-b pb-4 border-black ">
+      <h2 className=" text-3xl pt-16 font-bold border-b pb-4 border-black max-sm:pt-8 max-sm:pb-2  ">
         درباره ما
       </h2>
 
-      <div className="py-10">
+      <div className="py-10 max-sm:py-5">
         <AboutRow
           photoSRC={about1}
           alt="a picture"

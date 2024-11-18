@@ -2,8 +2,8 @@ import SocialIcon from "@/app/_components/SocialIcon";
 
 function FooterContacts() {
   return (
-    <div className="font-medium space-y-4">
-      <div className="bg-slate-800 py-2 px-4 mt-2">
+    <div className="font-medium space-y-4 max-lg:space-y-2">
+      <div className="bg-slate-800 py-2 px-4 mt-2 max-lg:px-2 max-lg:py-1">
         <p>نشانی:</p>
         <p>
           اصفهان، شهرک علمی و تحقیقاتی اصفهان، ساختمان فن آفرینی ۲، واحد 345

@@ -9,10 +9,10 @@ export const metadata = {
 export default function page() {
   return (
     <>
-      <h2 className=" text-3xl pt-16 font-bold border-b pb-4 border-black ">
+      <h2 className=" text-3xl pt-16 font-bold border-b pb-4 border-black max-sm:pt-8 max-sm:pb-2 ">
         تماس با ما
       </h2>
-      <div className="py-10 space-y-4 font-medium text-lg [&>div]:flex [&>div]:items-center [&>div]:gap-6 [&_svg]:size-8 [&_svg]:text-primary mx-32">
+      <div className="py-10 max-sm:py-5 space-y-4 font-medium text-lg [&>div]:flex [&>div]:items-center [&>div]:gap-6 [&_svg]:size-8 [&_svg]:text-primary mx-32 max-lg:mx-16 max-md:mx-8 max-sm:mx-4 max-sm:text-base max-sm:[&>div]:gap-3 [&_svg]:shrink-0">
         <div>
           <HiMiniPhone />
           <p>۰۳۱۳۳۹۳۲۰۲۰ - ۰۳۱۳۳۹۳۲۴۲۴</p>

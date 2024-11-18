@@ -25,7 +25,7 @@ const navItems = [
 
 function Nav() {
   return (
-    <nav>
+    <nav className="max-sm:hidden">
       <ul className="flex">
         {navItems.map((item) => (
           <NavItem key={item.id} referenceTo={item.reference}>

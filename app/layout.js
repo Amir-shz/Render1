@@ -48,7 +48,9 @@ const iranSans = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${iranSans.variable} antialiased font-iranSans`}>
+      <body
+        className={`${iranSans.variable} antialiased font-iranSans overflow-x-hidden`}
+      >
         <Header />
         <main className="px-4">{children}</main>
         <Footer />

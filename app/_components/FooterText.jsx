@@ -1,7 +1,7 @@
 function FooterText() {
   return (
-    <div className="text-justify font-medium leading-7">
-      <p className="font-bold mb-4">
+    <div className="text-justify font-medium leading-7 max-lg:leading-6 max-sm:leading-5 max-sm:font-normal ">
+      <p className="font-bold mb-4 max-lg:mb-2">
         مجهز ترین مرکز اجاره سرور های گرافیکی در ایران
       </p>
       <p>

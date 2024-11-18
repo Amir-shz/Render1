@@ -28,8 +28,8 @@ export default async function page({ params }) {
 
   return (
     <div className="my-4 mx-auto max-w-5xl">
-      <div className=" shadow-md flex flex-col border-2 rounded-md py-14 px-12  bg-white">
-        <p className=" text-4xl font-semibold pb-6">{title}</p>
+      <div className=" shadow-md flex flex-col border-2 rounded-md py-14 px-12 max-sm:py-6 max-sm:px-8 max-[460px]:px-4 bg-white">
+        <p className=" text-4xl font-semibold pb-6 max-sm:text-2xl">{title}</p>
         <div className=" pb-8 [&_p]:text-slate-600 [&_svg]:text-slate-600 [&_p]:text-sm flex gap-4">
           <div className="flex gap-1 items-center">
             <HiUser />
@@ -48,11 +48,15 @@ export default async function page({ params }) {
           className=" self-center w-3/5 pb-8"
         />
         <div className="text-justify ">
-          <h2 className="font-semibold text-3xl pb-4">{mainTitle}</h2>
+          <h2 className="font-semibold text-3xl pb-4 max-sm:text-xl">
+            {mainTitle}
+          </h2>
           <p className="text-slate-600 leading-7">{firstText}</p>
           {textItems.map((item) => (
             <div key={item.title}>
-              <h3 className="text-2xl font-semibold pb-4 pt-6">{item.title}</h3>
+              <h3 className="text-2xl max-sm:text-xl font-semibold pb-4 pt-6 max-sm:pb-2 max-sm:pt-3">
+                {item.title}
+              </h3>
               {item.text && (
                 <p className="text-slate-600 leading-7 whitespace-pre-line">
                   {item.text}
@@ -61,8 +65,8 @@ export default async function page({ params }) {
             </div>
           ))}
         </div>
-        <div className="flex items-center pt-8 gap-8">
-          <p className="font-semibold text-xl ">
+        <div className="flex items-center pt-8 gap-8 max-sm:gap-2">
+          <p className="font-semibold text-xl max-sm:text-base ">
             برای دانلود نرم افزار {app} میتوانید روی لینک زیر کلیک کنید.
           </p>
           <Link
@@ -84,7 +88,7 @@ export default async function page({ params }) {
         <p className="pb-4 pt-8 pr-8 text-lg font-semibold border-b-2 border-black ">
           مطالب مشابه
         </p>
-        <div className="grid grid-cols-4 gap-2 py-4">
+        <div className="grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-2 py-4">
           {sameBlogs.map((blog) => (
             <MiniBlogCard key={blog.id} blog={blog} />
           ))}

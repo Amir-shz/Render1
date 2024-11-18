@@ -6,7 +6,9 @@ function MiniBlogCard({ blog }) {
   return (
     <Link href={`/blog/${id}`}>
       <div className="hover:scale-[101%] transition-all duration-200 relative bg-slate-100 p-4 text-center rounded-md shadow-sm border border-slate-300">
-        <p className=" font-semibold pb-2">{title}</p>
+        <p className=" font-semibold pb-2 max-sm:font-medium max-sm:text-sm">
+          {title}
+        </p>
         <Image
           src={image}
           alt={title}
