@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @media screen and (max-width: 640px) {
+  #pricePlan__container {
+    background-size: cover;
+  }
+} */
+
 #pricePlan__container {
   background-size: 130%;
   background-position: center;

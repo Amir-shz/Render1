@@ -14,12 +14,12 @@ const navItems = [
   {
     id: 3,
     name: "درباره ما",
-    reference: "about-us",
+    reference: "/about-us",
   },
   {
     id: 4,
     name: "تماس با ما",
-    reference: "contact-us",
+    reference: "/contact-us",
   },
 ];
 

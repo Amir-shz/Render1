@@ -3,7 +3,7 @@ import PriceCard from "./PriceCard";
 function PricePlan() {
   return (
     <div
-      className=" transition-all duration-500 ease-in bg-slate-950 -mx-4 py-16"
+      className=" transition-all duration-500 ease-in bg-slate-950 -mx-4 py-16 "
       id="pricePlan__container"
     >
       <div className=" mx-48 max-lg:mx-24 max-md:mx-12">
