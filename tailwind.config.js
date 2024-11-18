@@ -13,6 +13,15 @@ module.exports = {
       colors: {
         primary: "#E3AE7E",
       },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(80%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 18s linear infinite",
+      },
     },
   },
   plugins: [],
