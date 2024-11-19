@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 function MainSlider() {
   return (
     <>
-      <div className=" relative -mx-4 text-white h-[calc(100vh-96px)]">
+      <div className=" relative -mx-4 text-white h-[calc(100dvh-96px)]">
         <Swiper
           effect="fade"
           allowTouchMove={false}
