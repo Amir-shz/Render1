@@ -2,7 +2,7 @@
 
 import { createPortal } from "react-dom";
 import useOutsideClick from "../_hooks/useOutsideClick";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { HiMiniXMark } from "react-icons/hi2";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -11,6 +11,15 @@ function SideBar({ isOpen, onClose }) {
   const modalRef = useRef(null);
   useOutsideClick(modalRef, onClose);
   const pathName = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // مطمئن می‌شویم که فقط در کلاینت اجرا می‌شود
+    setMounted(true);
+    return () => setMounted(false);
+  }, []);
+
+  if (!mounted) return null;
 
   return createPortal(
     <div
