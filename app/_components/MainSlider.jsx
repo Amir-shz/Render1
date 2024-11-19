@@ -54,7 +54,7 @@ function MainSlider() {
             <PrevBtn />
           </div>
         </Swiper>
-        <p className=" absolute top-2/3 -translate-y-16 -left-36 text-primary font-medium text-sm z-50 -rotate-90 ">
+        <p className=" absolute top-2/3 -translate-y-16 -left-36 text-primary font-medium text-sm z-40 -rotate-90 ">
           اسکرول کنید
           <span className="border-b border-primary inline-block w-72 mr-4 h-0"></span>
         </p>
