@@ -26,7 +26,7 @@ module.exports = {
       },
       animation: {
         marquee: "marquee 18s linear infinite",
-        scaleZoom: "scaleZoom 6s linear",
+        scaleZoom: "scaleZoom 6s linear infinite",
       },
     },
   },
