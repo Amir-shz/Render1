@@ -6,7 +6,7 @@ import why3 from "@/public/why3.jpg";
 function WhyRender1() {
   return (
     <div className=" bg-slate-900 -mx-4 py-16">
-      <div className=" pb-12 grid grid-cols-2 mx-48 max-lg:grid-cols-1 max-lg:mx-24 max-md:mx-12">
+      <div className=" pb-12 grid grid-cols-2 mx-48 max-lg:grid-cols-1 max-lg:mx-24 max-md:mx-12 max-sm:mx-6">
         <div>
           <p className="animate__animated animate__fadeInRight  pb-4 text-primary font-bold text-xl">
             چرا Render1 ؟
@@ -22,7 +22,7 @@ function WhyRender1() {
           </p>
         </div>
       </div>
-      <div className=" animate__animated animate__fadeInRight grid grid-cols-3 gap-2 mx-48 max-lg:mx-24 max-md:mx-12 max-sm:grid-cols-1 max-sm:gap-4">
+      <div className=" animate__animated animate__fadeInRight grid grid-cols-3 gap-2 mx-48 max-lg:mx-24 max-md:mx-12 max-sm:grid-cols-1 max-sm:gap-4 max-sm:mx-6">
         <Image src={why1} alt="photo" className="max-sm:h-40 object-cover" />
         <Image src={why2} alt="photo" className="max-sm:h-40 object-cover" />
         <Image src={why3} alt="photo" className="max-sm:h-40 object-cover" />

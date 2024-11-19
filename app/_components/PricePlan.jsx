@@ -6,7 +6,7 @@ function PricePlan() {
       className=" transition-all duration-500 ease-in bg-slate-950 -mx-4 py-16 "
       id="pricePlan__container"
     >
-      <div className=" mx-48 max-lg:mx-24 max-md:mx-12">
+      <div className=" mx-48 max-lg:mx-24 max-md:mx-12 max-sm:mx-6">
         <div className="pb-4 items-center text-primary font-bold text-xl flex justify-between">
           <p className=" ">سرورهای ویژه گرافیکی</p>
           <p className=" border-2 font-medium text-lg border-slate-600 py-2 px-4 rounded-lg bg-slate-950">

@@ -12,7 +12,7 @@ import PrevBtn from "./PrevBtn";
 function GpuSlider() {
   return (
     <div className=" text-white bg-[#05151b] -mx-4 py-16 max-sm:py-8">
-      <div className=" grid grid-cols-2 gap-24 px-48 relative max-xl:gap-12 max-lg:px-24 max-lg:gap-4 max-md:px-12 max-sm:grid-cols-1">
+      <div className=" grid grid-cols-2 gap-24 px-48 relative max-xl:gap-12 max-lg:px-24 max-lg:gap-4 max-md:px-12 max-sm:grid-cols-1 max-sm:px-6">
         <div className=" self-center size-full max-sm:pb-4">
           <Swiper>
             <SwiperSlide>
@@ -55,7 +55,7 @@ function GpuSlider() {
             <PrevBtn />
           </Swiper>
         </div>
-        <div className=" self-center z-10 mr-8">
+        <div className=" self-center z-10 mr-8 max-sm:mr-0">
           <p className=" font-medium pb-4 text-primary">
             بهترین GPU ها برای نیاز های گرافیکی
           </p>
