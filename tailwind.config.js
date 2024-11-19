@@ -18,9 +18,15 @@ module.exports = {
           "0%": { transform: "translateX(80%)" },
           "100%": { transform: "translateX(0)" },
         },
+        scaleZoom: {
+          "0%": { transform: "scale(100%)" },
+          "50%": { transform: "scale(110%)" },
+          "100%": { transform: "scale(100%)" },
+        },
       },
       animation: {
         marquee: "marquee 18s linear infinite",
+        scaleZoom: "scaleZoom 6s linear",
       },
     },
   },

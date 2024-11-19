@@ -14,7 +14,7 @@ function GpuSlider() {
     <div className=" text-white bg-[#05151b] -mx-4 py-16 max-sm:py-8">
       <div className=" grid grid-cols-2 gap-24 px-48 relative max-xl:gap-12 max-lg:px-24 max-lg:gap-4 max-md:px-12 max-sm:grid-cols-1 max-sm:px-6">
         <div className=" self-center size-full max-sm:pb-4">
-          <Swiper>
+          <Swiper loop={true}>
             <SwiperSlide>
               <div className=" relative hover:[&>div]:opacity-100">
                 <div className="transition-opacity duration-300 opacity-0 text-primary absolute top-0 left-0 size-full bg-slate-950/70">
