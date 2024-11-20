@@ -34,16 +34,16 @@ function MainSlider() {
           <SwiperSlide>
             <video
               src="slide3.mp4"
-              width="100px"
-              height="100px"
+              // width="100px"
+              // height="100px"
               autoPlay
               muted
               loop
               preload="none"
-              className="size-fit sepia-[0.05] brightness-[0.55] -z-10"
+              className=" object-cover w-auto h-auto min-w-full min-h-full sepia-[0.05] brightness-[0.55] -z-10"
             ></video>
 
-            <div className=" absolute top-0 left-0 size-full z-30 flex-col">
+            <div className=" bg- absolute top-0 left-0 size-full z-30 flex-col">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max max-[450px]:-translate-x-32">
                 <p className="text-primary font-semibold text-sm pb-4 max-md:text-sm max-[450px]:text-xs">
                   سرورهای بهینه‌سازی شده برای سرعت و دقت
