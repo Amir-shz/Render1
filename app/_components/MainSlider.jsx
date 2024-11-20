@@ -39,7 +39,7 @@ function MainSlider() {
               autoPlay
               muted
               loop
-              preload="none"
+              preload="auto"
               className=" object-cover w-auto h-auto min-w-full min-h-full sepia-[0.05] brightness-[0.55] -z-10"
             ></video>
 
