@@ -17,7 +17,7 @@ function AuthForm({ children, action }) {
         href="/"
         className=" absolute top-5 left-5 text-slate-100 bg-slate-600 p-2 rounded-full max-sm:top-3 max-sm:left-3"
       >
-        <HiOutlineHome className=" size-10" />
+        <HiOutlineHome className=" size-10 max-sm:size-8" />
       </Link>
     </div>
   );
