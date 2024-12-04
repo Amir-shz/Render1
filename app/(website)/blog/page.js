@@ -1,4 +1,4 @@
-import BlogCard from "../_components/BlogCard";
+import BlogCard from "../../_components/BlogCard";
 import { data } from "@/app/_data/blogData";
 
 export const metadata = {
