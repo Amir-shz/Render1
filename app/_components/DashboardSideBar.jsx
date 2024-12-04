@@ -22,7 +22,12 @@ function Menu() {
       <button onClick={() => setIsOpen((isOpen) => !isOpen)} className="p-2">
         <HiBars3 className="size-8" />
       </button>
-      <Drawer open={isOpen} onClose={() => setIsOpen(false)} anchor="top">
+      <Drawer
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        onClick={() => setIsOpen(false)}
+        anchor="top"
+      >
         <div className=" px-4 py-2 space-y-2 bg-slate-700">
           <MainNavBtn href="/dashboard" icon={<HiOutlineHome />}>
             خانه

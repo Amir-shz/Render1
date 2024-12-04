@@ -13,7 +13,7 @@ export async function handleSignIn(formData) {
 
 export async function handleSignOut() {
   // console.log("sign out");
-  // redirect("/dashboard");
+  redirect("/login");
 }
 
 export async function handleForgetPassword(formData) {
