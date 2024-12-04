@@ -22,13 +22,16 @@ function RealPersonForm({ personType }) {
           <AuthInput name="email" type="email" label="ایمیل" />
         </div>
       </div>
-
-      <AuthInput
-        name="phone"
-        type="number"
-        label="شماره موبایل (نیاز به تایید)"
-      />
-      <AuthInput name="password" type="password" label="رمزعبور" />
+      <div className="mt-1 ">
+        <div className="mb-1">
+          <AuthInput
+            name="phone"
+            type="number"
+            label="شماره موبایل (نیاز به تایید)"
+          />
+        </div>
+        <AuthInput name="password" type="password" label="رمزعبور" />
+      </div>
 
       <Button
         fullWidth
@@ -44,22 +47,6 @@ function RealPersonForm({ personType }) {
           ورود
         </Link>
       </div>
-      {/* <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint
-        perferendis alias ipsum vitae delectus et, accusamus aliquam iste
-        asperiores tempore quis earum similique unde reprehenderit enim eos
-        aspernatur inventore. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Earum, iste! Laboriosam, ipsum! Consequuntur eum doloribus
-        corporis, beatae dolor dicta. Quae saepe a id dignissimos odit iusto
-        tempora sapiente est consequatur. Lorem ipsum, dolor sit amet
-        consectetur adipisicing elit. Autem, temporibus! Voluptatum nihil
-        blanditiis quasi excepturi numquam! Soluta assumenda fuga beatae sit,
-        odio dignissimos quisquam est non dolore laudantium minus animi. Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt
-        repellendus itaque distinctio velit reiciendis ducimus cumque porro
-        quidem? Praesentium sapiente delectus et magni corporis, enim est!
-        Alias, libero dolores!
-      </p> */}
     </form>
   );
 }

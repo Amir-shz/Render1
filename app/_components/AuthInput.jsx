@@ -1,7 +1,7 @@
 function AuthInput({ name, type, label }) {
   return (
     <>
-      <label htmlFor={name} className=" max-sm:text-sm font-medium">
+      <label htmlFor={name} className=" max-sm:text-sm font-medium ">
         {label}
       </label>
       <input

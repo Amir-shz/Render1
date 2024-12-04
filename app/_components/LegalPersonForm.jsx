@@ -21,13 +21,21 @@ function LegalPersonForm({ personType }) {
           <AuthInput name="email" type="email" label="کد اقتصادی" />
         </div>
       </div>
-      <AuthInput name="email" type="email" label="ایمیل" />
-      <AuthInput
-        name="phone"
-        type="number"
-        label="شماره موبایل (نیاز به تایید)"
-      />
-      <AuthInput name="password" type="password" label="رمزعبور" />
+      <div className="space-y-1">
+        <div>
+          <AuthInput name="email" type="email" label="ایمیل" />
+        </div>
+        <div>
+          <AuthInput
+            name="phone"
+            type="number"
+            label="شماره موبایل (نیاز به تایید)"
+          />
+        </div>
+        <div>
+          <AuthInput name="password" type="password" label="رمزعبور" />
+        </div>
+      </div>
 
       <Button
         fullWidth
