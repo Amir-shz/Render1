@@ -1,11 +1,14 @@
 "use server";
 
+import { redirect } from "next/navigation";
+
 export async function handleComment(formData) {
   console.log(formData);
 }
 
 export async function handleSignIn(formData) {
   console.log(formData);
+  redirect("/dashboard");
 }
 
 export async function handleForgetPassword(formData) {

@@ -7,7 +7,9 @@ import Link from "next/link";
 export default function Page() {
   return (
     <AuthForm action={handleSignIn}>
-      <h2 className=" font-semibold text-xl">ورود به حساب کاربری</h2>
+      <h2 className=" font-semibold text-xl max-sm:text-lg">
+        ورود به حساب کاربری
+      </h2>
       <div className=" grid grid-cols-[1fr_5fr] gap-4 w-full mt-6 max-sm:grid-cols-1 max-sm:gap-1">
         <AuthInput name="email" type="email" label="ایمیل" />
         <AuthInput name="password" type="password" label="رمزعبور" />

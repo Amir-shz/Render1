@@ -1,7 +1,9 @@
 function AuthInput({ name, type, label }) {
   return (
     <>
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={name} className=" max-sm:text-sm font-medium">
+        {label}
+      </label>
       <input
         required
         name={name}

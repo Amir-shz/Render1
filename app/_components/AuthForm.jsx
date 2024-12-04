@@ -8,7 +8,7 @@ function AuthForm({ children, action }) {
       <div className="  flex  flex-1 size-full">
         <form
           action={action}
-          className=" z-20 bg-slate-50 border border-slate-600/50 max-xl:w-1/2 max-md:w-2/3 max-sm:w-3/4  w-1/3 h-min absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl text-black flex flex-col gap-4 items-center justify-center px-8 max-sm:px-4 py-8"
+          className=" z-20 bg-slate-50 border border-slate-600/50 max-xl:w-1/2 max-md:w-2/3 max-sm:w-3/4  w-1/3 h-min absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl text-black flex flex-col gap-4 items-center justify-center px-8 max-sm:px-4 py-8 max-sm:py-6"
         >
           {children}
         </form>

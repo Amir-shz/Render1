@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <AuthForm action={handleForgetPassword}>
-      <h2 className=" font-semibold text-xl">تغییر رمزعبور</h2>
+      <h2 className=" font-semibold text-xl max-sm:text-lg">تغییر رمزعبور</h2>
       <p className=" text-xs text-center">
         ایمیل و یا شماره تماسی که برای ثبت نام استفاده کرده اید را وارد کنید تا
         کد تغییر پسورد برای شما ارسال شود.
