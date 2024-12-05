@@ -10,7 +10,7 @@ function Layout({ children }) {
       <div className=" px-4 col-span-10 bg-slate-700 grid  max-lg:col-span-9 max-md:col-span-full">
         <DashboardHeader />
       </div>
-      <div className="col-span-10 row-span-11 overflow-y-scroll overflow-x-hidden no-scrollbar max-lg:col-span-9 max-md:col-span-full ">
+      <div className="col-span-10 row-span-11 overflow-x-hidden  overflow-y-scroll no-scrollbar max-lg:col-span-9 max-md:col-span-full p-4 ">
         {children}
       </div>
     </div>
