@@ -1,19 +1,20 @@
 import Image from "next/image";
 import Server1 from "@/public/server1.jpg";
 
-import { Button, Chip } from "@mui/material";
+import { Button } from "@mui/material";
 
 function ProductCard({ isAvailable = false }) {
   return (
     <div className="shadow-md bg-slate-300 rounded-t-3xl rounded-b-md overflow-hidden">
       <figure className="w-full h-72 overflow-hidden relative">
         <Image src={Server1} alt="server" className=" object-fill size-full" />
-        <Chip
-          label={`${isAvailable ? "موجود" : "ناموجود"}`}
+        <p
           className={`${
             isAvailable ? "bg-green-600" : "bg-red-500"
-          } absolute bottom-2 left-2  text-white font-iranSans cursor-default p-1`}
-        />
+          } absolute bottom-2 left-2  text-white font-iranSans cursor-default px-2 py-1 text-sm rounded-full`}
+        >
+          {`${isAvailable ? "موجود" : "ناموجود"}`}
+        </p>
       </figure>
       <div className="p-4">
         <p className=" font-bold text-xl">سرور گرافیکی RTX 3060-12</p>
