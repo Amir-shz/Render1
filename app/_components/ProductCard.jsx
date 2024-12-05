@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Server1 from "@/public/server1.jpg";
 
-import { Chip } from "@mui/material";
+import { Button, Chip } from "@mui/material";
 
 function ProductCard({ isAvailable = false }) {
   return (
@@ -15,7 +15,7 @@ function ProductCard({ isAvailable = false }) {
           } absolute bottom-2 left-2  text-white font-iranSans cursor-default p-1`}
         />
       </figure>
-      <div className="p-4 pb-0">
+      <div className="p-4">
         <p className=" font-bold text-xl">سرور گرافیکی RTX 3060-12</p>
         <div className="[&>div]:flex [&>div]:gap-2 [&>div]:items-center [&>div>p]:font-medium mt-4 space-y-2  ">
           <div>
@@ -68,6 +68,29 @@ function ProductCard({ isAvailable = false }) {
             <p>64GB Ram</p>
           </div>
         </div>
+      </div>
+      <div className="px-4 flex justify-between items-center">
+        <p className="font-semibold text-lg text-green-800">
+          قیمت <span className="text-xs">(روزانه)</span>: ۲۷۰,۰۰۰ تومان
+        </p>
+        <p
+          className={`text-sm font-bold ${
+            isAvailable ? "text-green-500" : "text-red-500"
+          }`}
+        >
+          {isAvailable ? "موجودی: ۲" : "ناموجود"}
+        </p>
+      </div>
+      <div className="w-full px-10 py-4">
+        <Button
+          disabled={!isAvailable}
+          fullWidth
+          variant="contained"
+          type="submit"
+          className=" font-iranSans"
+        >
+          سفارش
+        </Button>
       </div>
     </div>
   );

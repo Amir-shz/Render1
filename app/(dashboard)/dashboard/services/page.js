@@ -12,9 +12,9 @@ function Page() {
         <ProductCard />
         <ProductCard isAvailable />
         <ProductCard />
+        <ProductCard isAvailable />
         <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard isAvailable />
       </div>
     </div>
   );
