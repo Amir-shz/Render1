@@ -23,3 +23,11 @@ export async function handleForgetPassword(formData) {
 export async function handleSignUp(formData) {
   console.log(formData);
 }
+
+export async function handleAdditionalSpec(formData) {
+  console.log(formData);
+}
+
+export async function handleNationalCard(formData) {
+  console.log(formData);
+}

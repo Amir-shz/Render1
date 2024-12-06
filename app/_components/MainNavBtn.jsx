@@ -2,14 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
 
 function MainNavBtn({ href, icon, children }) {
   const pathName = usePathname();
-  useEffect(() => {
-    console.log(pathName);
-    console.log(href);
-  }, [href, pathName]);
+
   return (
     <Link
       href={href}
