@@ -8,7 +8,7 @@ function AdditionalSpecifications() {
   return (
     <form
       action={handleAdditionalSpec}
-      className="bg-slate-100 rounded-sm p-4 shadow pb-2"
+      className="bg-slate-100 rounded-sm p-4 shadow pb-2 max-sm:p-2"
     >
       <div className="flex items-center gap-4">
         <h3 className=" text-lg font-medium">مشخصات تکمیلی</h3>
@@ -18,7 +18,7 @@ function AdditionalSpecifications() {
           </p>
         )}
       </div>
-      <div className=" my-2 grid grid-cols-[1fr_5fr] items-center gap-y-2">
+      <div className=" my-2 grid grid-cols-[1fr_5fr] items-center gap-2">
         <SpecificationInput label="شهر" type="Text" id="city" />
         <SpecificationInput label="کدشهر" type="number" id="phoneCode" />
         <SpecificationInput label="شماره تلفن" type="number" id="phoneNumber" />

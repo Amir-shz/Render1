@@ -13,7 +13,7 @@ function NationalCardSection() {
     <form
       action={handleNationalCard}
       onSubmit={() => setFile("")}
-      className="bg-slate-100 rounded-sm p-4 shadow pb-2 col-span-2 max-lg:col-span-1"
+      className="bg-slate-100 rounded-sm p-4 shadow pb-2 col-span-2 max-lg:col-span-1 max-sm:p-2"
     >
       <div className="flex items-center gap-4">
         <h3 className=" text-lg font-medium">کارت ملی</h3>
