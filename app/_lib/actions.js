@@ -31,3 +31,7 @@ export async function handleAdditionalSpec(formData) {
 export async function handleNationalCard(formData) {
   console.log(formData);
 }
+
+export async function handleTicket(formData) {
+  console.log(formData);
+}
