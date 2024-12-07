@@ -1,16 +1,11 @@
 "use client";
 import Pagination from "@/app/_components/Pagination";
 import ProductCard from "@/app/_components/ProductCard";
-import { PAGE_SIZE } from "@/app/_lib/utils";
-import { useSearchParams } from "next/navigation";
+import ProductList from "@/app/_components/ProductList";
 import { Suspense } from "react";
 
 function Page() {
-  const searchParams = useSearchParams();
-  const page = !searchParams.get("page") ? 1 : Number(searchParams.get("page"));
   const productNum = Array.from({ length: 22 });
-  const startIndex = (page - 1) * PAGE_SIZE;
-  const endIndex = startIndex + PAGE_SIZE - 1;
 
   return (
     <div>
@@ -26,13 +21,9 @@ function Page() {
         <ProductCard isAvailable />
         <ProductCard />
         <ProductCard isAvailable /> */}
-        {productNum.map((val, index) =>
-          index >= startIndex && index <= endIndex ? (
-            <Suspense fallback="<p>loading</p>" key={Math.random()}>
-              <ProductCard />
-            </Suspense>
-          ) : null
-        )}
+        <Suspense fallback="<p>loading</p>">
+          <ProductList productNum={productNum} />
+        </Suspense>
       </div>
       <div className="flex justify-center my-4">
         <Pagination count={productNum.length} />
