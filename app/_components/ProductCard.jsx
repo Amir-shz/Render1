@@ -5,8 +5,8 @@ import { Button } from "@mui/material";
 
 function ProductCard({ isAvailable = false }) {
   return (
-    <div className="shadow-md bg-slate-300 rounded-t-3xl rounded-b-md overflow-hidden">
-      <figure className="w-full h-72 overflow-hidden relative">
+    <div className="shadow-md bg-slate-300 rounded-t-xl rounded-b-md overflow-hidden">
+      <figure className="w-full h-48 overflow-hidden relative">
         <Image src={Server1} alt="server" className=" object-fill size-full" />
         <p
           className={`${
@@ -16,9 +16,9 @@ function ProductCard({ isAvailable = false }) {
           {`${isAvailable ? "موجود" : "ناموجود"}`}
         </p>
       </figure>
-      <div className="p-4">
-        <p className=" font-bold text-xl">سرور گرافیکی RTX 3060-12</p>
-        <div className="[&>div]:flex [&>div]:gap-2 [&>div]:items-center [&>div>p]:font-medium mt-4 space-y-2  ">
+      <div className="p-3 ">
+        <p className=" font-bold text-lg">سرور گرافیکی RTX 3060-12</p>
+        <div className="[&>div]:flex [&>div]:gap-2 [&>div]:items-center [&>div>p]:text-sm [&>div>p]:font-medium mt-4 space-y-2  ">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,8 +70,8 @@ function ProductCard({ isAvailable = false }) {
           </div>
         </div>
       </div>
-      <div className="px-4 flex justify-between items-center">
-        <p className="font-semibold text-lg text-green-800">
+      <div className="px-3 flex justify-between items-center">
+        <p className="font-semibold text-base text-green-800">
           قیمت <span className="text-xs">(روزانه)</span>: ۲۷۰,۰۰۰ تومان
         </p>
         <p
