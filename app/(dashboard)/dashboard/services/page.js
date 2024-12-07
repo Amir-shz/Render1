@@ -1,6 +1,6 @@
 "use client";
+
 import Pagination from "@/app/_components/Pagination";
-import ProductCard from "@/app/_components/ProductCard";
 import ProductList from "@/app/_components/ProductList";
 import { Suspense } from "react";
 

@@ -1,3 +1,5 @@
+"use client";
+
 import { useSearchParams } from "next/navigation";
 import { PAGE_SIZE } from "../_lib/utils";
 import ProductCard from "./ProductCard";
