@@ -3,6 +3,7 @@ import Pagination from "@/app/_components/Pagination";
 import ProductCard from "@/app/_components/ProductCard";
 import { PAGE_SIZE } from "@/app/_lib/utils";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 function Page() {
   const searchParams = useSearchParams();
@@ -27,7 +28,9 @@ function Page() {
         <ProductCard isAvailable /> */}
         {productNum.map((val, index) =>
           index >= startIndex && index <= endIndex ? (
-            <ProductCard key={Math.random()} />
+            <Suspense fallback="<p>loading</p>">
+              <ProductCard key={Math.random()} />
+            </Suspense>
           ) : null
         )}
       </div>
