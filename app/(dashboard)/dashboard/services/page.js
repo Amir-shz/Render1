@@ -28,8 +28,8 @@ function Page() {
         <ProductCard isAvailable /> */}
         {productNum.map((val, index) =>
           index >= startIndex && index <= endIndex ? (
-            <Suspense fallback="<p>loading</p>">
-              <ProductCard key={Math.random()} />
+            <Suspense fallback="<p>loading</p>" key={Math.random()}>
+              <ProductCard />
             </Suspense>
           ) : null
         )}
