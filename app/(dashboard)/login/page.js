@@ -1,12 +1,21 @@
+"use client";
+
 import AuthForm from "@/app/_components/AuthForm";
 import AuthInput from "@/app/_components/AuthInput";
 import { handleSignIn } from "@/app/_lib/actions";
 import { Button } from "@mui/material";
 import Link from "next/link";
 
+import { useActionState, useEffect, useFormState } from "react";
+const initialState = {
+  message: "",
+};
+
 export default function Page() {
+  const [state, formAction, isPending] = useActionState(handleSignIn, null);
+
   return (
-    <AuthForm action={handleSignIn}>
+    <AuthForm action={formAction}>
       <h2 className=" font-semibold text-xl max-sm:text-lg">
         ورود به حساب کاربری
       </h2>
@@ -20,13 +29,15 @@ export default function Page() {
       >
         رمزعبور خود را فراموش کردید؟
       </Link>
+      <p className=" font-medium text-red-500 text-sm">{state?.password[0]}</p>
       <Button
         fullWidth
         variant="contained"
         type="submit"
         className=" font-iranSans"
+        disabled={isPending}
       >
-        ورود
+        {isPending ? "درحال ورود" : "ورود"}
       </Button>
       <div className=" flex items-center gap-4 self-start mt-4">
         <p>حساب کاربری ندارید؟</p>
