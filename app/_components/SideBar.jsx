@@ -4,13 +4,12 @@ import { createPortal } from "react-dom";
 import useOutsideClick from "../_hooks/useOutsideClick";
 import { useEffect, useRef, useState } from "react";
 import { HiMiniXMark } from "react-icons/hi2";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { navItems } from "../_lib/utils";
+import SideBarItem from "./SideBarItem";
 
 function SideBar({ isOpen, onClose }) {
   const modalRef = useRef(null);
   useOutsideClick(modalRef, onClose);
-  const pathName = usePathname();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -48,45 +47,11 @@ function SideBar({ isOpen, onClose }) {
             isOpen ? "block" : "hidden"
           } text-white [&_li]:py-2 mt-2 [&_li]:px-4 [&_li]:mx-1 [&_li]:my-1 [&_li]:rounded-md [&_li]:border [&_li]:border-slate-600`}
         >
-          <Link href="/" onClick={() => onClose()}>
-            <li
-              className={`${
-                pathName === "/" ? " bg-slate-700" : "bg-slate-800"
-              }`}
-            >
-              خانه
-            </li>
-          </Link>
-
-          <Link href="/blog" onClick={() => onClose()}>
-            <li
-              className={`${
-                pathName === "/blog" ? " bg-slate-700" : "bg-slate-800"
-              }`}
-            >
-              پایگاه دانش
-            </li>
-          </Link>
-
-          <Link href="/about-us" onClick={() => onClose()}>
-            <li
-              className={`${
-                pathName === "/about-us" ? " bg-slate-700" : "bg-slate-800"
-              }`}
-            >
-              درباره ما
-            </li>
-          </Link>
-
-          <Link href="/contact-us" onClick={() => onClose()}>
-            <li
-              className={`${
-                pathName === "/contact-us" ? " bg-slate-700" : "bg-slate-800"
-              }`}
-            >
-              تماس با ما
-            </li>
-          </Link>
+          {navItems.map((item) => (
+            <SideBarItem key={item.id} href={item.reference} onClose={onClose}>
+              {item.name}
+            </SideBarItem>
+          ))}
         </ul>
       </div>
     </div>,
